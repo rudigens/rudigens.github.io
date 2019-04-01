@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style type="text/css" media="all">
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Interactive World Map of Coal and Peat Fires</title>
+<script type="text/javascript">
+function Map(theform) {
+	if (theform.map.options.world.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=d680df01db2240e6a4e522881b39fe32"}
+	if (theform.map.options.africa.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=5dac7c6eac9946ca8a37f76c84dd0855"}
+	if (theform.map.options.asia.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=6237f673dc964d589b6cf33c535bba59"}
+	if (theform.map.options.australia.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=2657d4cbd0354e3580f873d1209b487d"}
+	if (theform.map.options.europe.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=25ceb6af89e54e71a92656bf4e7babe2"}
+	if (theform.map.options.north_america.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=bb42c90545594b94af2e3ef08f5e91a5"}
+	if (theform.map.options.south_america.selected == true) {top.location="https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=253da42f46a447f59412d1ded6823c2b"}
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2>Global distribution of coal and peat fires</h2>
+An Interactive World Map of Coal and Peat Fires by <a href="mailto:rudigens@gmail.com">Rudiger Gens</a>, made to accompany <a href="http://www.elsevierdirect.com/brochures/coalpeatfires/index.html">Coal and Peat Fires: A Global Perspective</a>, Edited by Glenn B. Stracher, Anupma Prakash, and Ellina V. Sokol<br /><br />
+
+<div>
+	<img src="frontpage.jpg" width="800" height="600" /><br /><br />
+	<form id="dropdown" action="#">
+		<label>Explore interactive map - Zoom:&nbsp;</label>
+		<select id="map">
+			<option id="world">World</option>
+			<option id="africa">Africa</option>
+			<option id="asia">Asia</option>
+			<option id="australia">Australia</option>
+			<option id="europe">Europe</option>
+			<option id="north_america">North America</option>
+			<option id="south_america">South America</option>
+		</select>
+		<input type="button" onclick="Map(this.form)" value="Select" />
+	</form>
+</div>
+
+</body>
+</html>
