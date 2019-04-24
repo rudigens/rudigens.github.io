@@ -1,0 +1,232 @@
+body {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 1.75em 0;
+	padding: 0;
+	font: medium/14px "Lucida Grand", Verdana, Lucida, Arial, Helvetica, sans-serif;
+	background-color: #006;
+	color: #fff;
+	line-height: 1.4;
+	voice-family: "\"}\""; voice-family: inherit;
+	font-size: medium;
+	text-align: left;
+}
+
+/* Container holding everything together */
+#container {
+	width: 69.75em;
+	margin: 0;
+	padding-left: 1em;
+}
+
+/* Main content */
+#main, #contents, #left_navigation, #rightNavigation {
+	float: left;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: auto;
+}
+#main {
+	width: 48.75em;
+	color: #000;
+	background-color: #ffc;
+	padding-top: 0.5em;
+	padding-left: 1.25em;
+	padding-bottom: 2em;
+	margin: 1px 0 1em 0;
+}
+#contents {
+	width: 50em;
+	background-color: #006;
+}
+
+/* Styles: Headings, paragraphs etc. */
+.heading, .subheading {
+	color: #006;
+	font-weight: bold;
+}
+.heading {
+	font-size: larger;
+	font-style: italic;
+}
+.subheading {
+	font-size: medium;
+	font-style: normal;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.heading, .paragraph {
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+.text_separater {
+	margin: 1em -0.5em;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #900;
+}
+
+/* Navigation */
+#left_navigation, #right_navigation {
+	margin-top: 5.5em;
+	padding: 0;
+	border: thin solid #000;
+	width: 12em;
+	text-align: left;
+	line-height: 1.9em;
+	color: #ffc;
+	font-size: small;
+	font-weight: bold;
+	background-color: #cc9;
+}
+#right_navigation {
+	float: right;
+}
+#main_navigation {
+	display: inline;
+	text-align: left;
+	line-height: 1.9em;
+	color: #006;
+	font-size: small;
+	font-weight: bold;
+}
+#left_navigation ul, #main_navigation ul, #right_navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#main_navigation ul {
+	margin-left: 15px;
+}
+#left_navigation li, #right_navigation li {
+	border-bottom: thin dotted #996;
+	margin: 0;
+}
+#left_navigation li a, #main_navigation li a, #right_navigation li a {
+	text-decoration: none;
+	color: #006;
+	background-color: #cc9;	
+	padding: 5px 1em;
+}
+#left_navigation li a, #right_navigation li a {
+	display: block;
+}
+#main_navigation li {
+	display: inline;
+	background-color: #cc9;	
+	border: 1px solid #000;
+}
+#left_navigation li a:hover, #main_navigation li a:hover, #right_navigation li a:hover {
+	background-color: #dda;
+	color: #009;
+}
+.current {
+	color: #900;
+	padding: 5px 1em;
+}
+#main_navigation li#current {
+	display: inline;
+	color: #900;
+	background-color: #ffc;
+	padding: 5px 1em;
+	border-bottom: 1px solid #ffc;
+}
+#rightNavigation {
+	float: left;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000;
+	background-color: #996;
+	width: 11em;
+	margin-top: 3.5em;
+	padding: 0 0.75em;
+}
+#weather {
+	float: left;
+	margin-top: 1.5em;
+}
+.weatherLink {
+	margin-left: 1em;
+	padding-bottom: 0.3em;
+	z-index: inherit;
+}
+
+/* Columns */
+.text_column, .text_column_border {
+	float: left;
+	width: 12em;
+	padding-right: 1em;
+	margin-right: 1.5em;
+}
+.text_column_border {
+	border-right-style: solid;
+	border-right-width: thin;
+	border-right-color: #900;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+}
+.text_link a:link, .text_link a:visited {
+	color: #006;
+	border-bottom: 1px dotted #006;
+}
+.text_link a:hover {
+	color: #006;
+	border-bottom: 1px solid #006;
+}
+
+/* Forms */
+label {
+	float: left;
+	width: 8.5em;
+	margin-right: 1em;
+	text-align: right;
+	font-weight: bold;
+	font-size: small;
+	color: #996;
+}
+select {
+	width: 21em;
+	background-color: #cc9;
+	margin-right: 1em;
+}
+label, input, select {
+	margin-bottom: 0.75em;
+}
+
+/* Footer */
+#update {
+	float: left;
+	margin-bottom: 30px;
+}
+#validation {
+	float: right;
+	font-weight: bold;
+}
+#footer {
+	width: 750px;
+	text-align: left;
+	text-decoration: none;
+	margin: 0;
+	margin-left: 2em;
+	padding: 0 1.25em 2em 0;
+	border: 0;
+	background-color: #006;
+	color: #ffc;
+	font-size: small;
+	font-weight: normal;
+}
+#footer a:link, #footer a:visited {
+	color: #ffc;
+	background: transparent;
+	border-bottom: 1px dotted #ffc;
+}
+#footer a:hover {
+	color: #ffc;
+	background: transparent;
+	border-bottom: 1px solid #ffc;
+}

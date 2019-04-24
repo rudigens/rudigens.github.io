@@ -1,0 +1,132 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+<meta name="viewport" content="width=480, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+<link media="screen" href="xhtml.css" type="text/css" rel="stylesheet" /> 
+<link media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="../mobile.css" type="text/css" rel="stylesheet" />
+<!--[if IEMobile]>
+<link rel="stylesheet" type="text/css" href="mobile.css" media="screen" />
+<![endif]-->
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<title>Rudi Gens: Software</title>
+<script type="text/javascript" src="mobile.js"></script>
+</head>
+<body>
+<div id="container">
+<div id="mobile_title">Rudi Gens:</div>
+<ul id="main_navigation">
+<li><a href="research.html" title="Research">Research</a></li>
+<li><a href="projects.html" title="Projects">Projects</a></li>
+<li><a href="teaching.html" title="Teaching">Teaching</a></li>
+<li class="selected" title="Software">Software</li>
+<li><a href="outreach.html" title="Outreach">Outreach</a></li>
+<li><a href="summary.html" title="About">About</a></li>
+</ul>
+<form id="mobile_navigation" action="url"><div>
+<select id="mobile_nav" onchange="navigate(this.form)">
+<option id="research">Research</option>
+<option id="project">Projects</option>
+<option id="teaching">Teaching</option>
+<option id="software">Software</option>
+<option id="outreach">Outreach</option>
+<option id="summary">Summary</option>
+<option id="cv">Curriculum vitae</option>
+<option id="publication">Publications</option>
+<option id="contact" selected="selected">Contact details</option>
+</select>
+</div></form>
+<div id="contents">
+<h1>Documentation</h1>
+<p><img class="align_right" src="img/document.png" width="233" height="302" alt="Documentation sample" />The documentation of software is often the most neglected part of any software development. Once it is in place it is quite a time saver but it takes a while to get there. I have spent a considerable amount of time to develop documentation for the ASF software tools.</p>
+<p>The documents that I generated, some along with Tom Logan, are listed below.</p>
+<ul>
+<li><a href="documentation/asf_software_tools.pdf">ASF software tools</a> (<span class="pdf">PDF</span> - 3.1 MB)</li>
+<li><a href="documentation/ceos_metadata.pdf">Calculation of ASF CEOS metadata</a> (<span class="pdf">PDF</span> - 348 K)</li>
+<li><a href="documentation/asf_convert_manual.pdf">ASF convert manual</a> (<span class="pdf">PDF</span> - 5.1 MB)</li>
+<li><a href="documentation/sar_training_processor.pdf">SAR training processor</a> (<span class="pdf">PDF</span> - 5.7 MB)</li>
+<li><a href="documentation/ips_manual.pdf">IPS manual</a> (<span class="pdf">PDF</span> - 104 K)</li>
+</ul>
+<br /><br />
+
+<a name="mapready">&nbsp;</a>
+<h1>MapReady</h1>
+<p><img class="align_right" src="img/mapready.png" width="250" height="145" alt="MapReady interface for processing SAR data" />
+I am involved in the development of MapReady from its inception. My main areas of expertise in MapReady are in</p>
+<ul>
+<li>data formats</li>
+<li>metadata related issues</li>
+<li>map projections</li>
+</ul>
+<p>We have came a long way with the graphical user interface. However, the command line tools offer even more functionality.</p>
+<p>The latest version of MapReady can be downloaded <a href="https://github.com/asfadmin/ASF_MapReady" onclick="window.open(this.href,'new'); return false;">here</a>.</p>
+
+<a name="polsarpro">&nbsp;</a>
+<h1>PolSARPro</h1>
+<p><img class="align_right" src="img/polsarpro.png" width="250" height="146" alt="PolSARPro interface for processing polarimetric data" />
+I collaborated with Eric Pottier to develop an interface that integrates PolSARPro's polarimetric processing capabilities with MapReady's functionality for terrain correcting and geocoding SAR data.</p>
+<p>We published an article that analyzes the alternative processing flows that are available with the integration of the two software packages.</p>
+<div class="reference">
+<span class="author">Gens, R., Atwood, D.K. and Pottier, E.,</span>
+<span class="year">2013.</span>
+<span class="title">Geocoding of polarimetric processing results: Alternative processing strategies.</span>
+<span class="journal">Remote Sensing Letters.</span>
+<span class="volume">4</span>
+<span class="issue">(1):</span>
+<span class="pages">39-45.</span>
+</div>
+<br />
+
+<h1>Radarsat baseline catalog</h1>
+<p><img class="align_right" src="img/baseline_catalog.png" width="250" height="175" alt="Analysis example of Radarsat baselines" />
+I developed the prototype of catalog for Radarsat interferometric baselines. The baseline catalog allows InSAR users to determine suitable InSAR image pairs for their particular applications without having to actually process the data sets first. This is a huge time saver, especially for projects that deal with large data volumes.</p>
+<p>I published an article that provides  more details about the catalog:</p>
+<div class="reference">
+<span class="author">Gens, R.,</span>
+<span class="year">2005.</span>
+<span class="title">RADARSAT-1 interferometric baseline catalog at the Alaska Satellite Facility.</span>
+<span class="journal">EOS,</span>
+<span class="volume">86</span>
+<span class="issue">(16)</span>
+<span class="pages">:158.</span>
+</div>
+<br />
+
+<h1>Interferometric processing system (IPS)</h1>
+<p><img class="align_right" src="img/interferogram.jpg" width="" height="" alt="Interferogram overlaid on coherence image" />This
+  project laid the foundation for many of the latest ASF software tool developments.</p>
+<p>The SAR interferometric processing flow is rather complex and involves quite a number of steps. Originally, the software had been written in a modular fashion so that each processing step was performed by a separate tool. A fair number of tools were still implemented as scripts. The processing flow was realized by running the individual tools in sequence in a simple Unix script. This approach obviously had its limitations in terms of error handling and complexity of processing scenarios. In a transition period, we converted all the scripts into C programs. Only the script that controlled the entire processing remained in place.</p>
+<p>The key to a vastly improved handling of the processing flow was the development of a driver program that replaced the processing flow script. As part of the driver program I implemented reporting scheme that allowed us to keep all relevant processing information in a log file. This is still the most valuable piece of information for troubleshooting processing issues. The other important feature of the driver program is the fact that it entirely runs from a configuration file. This avoids any major user interaction via the command line and allows for a high level of automation.</p>
+<p>We have adopted this configuration file concept for the development of the asf_convert tool. It greatly simplified the implementation of a graphical user interface on top of convert tool.</p>
+<br />
+
+<h1>SAR training processor (STP)</h1>
+<p><img class="align_right" src="img/stp_screen.png" width="350" height="275" alt="Screenshot from SAR training processor" />The
+  SAR training processor is one of the projects I was very interested in. SAR
+  processing complex,  not straight forward to follow  and, therefore,
+  challenging to  teach. Often, training tools have limitations in
+  the size of the data sets they can handle or do not have the full functionality
+  of the actual tool. Our main goal was to develop a SAR training processor
+  that does not have these kind of limitations but still explains in sufficient
+  detail how SAR processing works.</p>
+<p>What we ended up doing was to extend the debugging mode of our range Doppler processor so that all the intermediate results can be stored and each of main processing steps can be manipulated. A graphical user interface helped to explain the details of the processing flow and runs the processor with all the required debug options in a simple, for the user completely transparent fashion.</p>
+<p>I have used the STP extensively in my classes and the feedback from the students
+  has helped us to further improve the interface.</p>
+<br />
+
+</div>
+<div id="footer">
+<span id="update">Last update: 21-Apr-2019<br />
+Copyright &#169; 2007-2019 Rudi Gens. All rights reserved.</span>
+<span id="validation">
+<span class="paragraph"><a href="http://validator.w3.org/check?uri=referer" title="XHTML validation.">XHTML</a> - 
+<a href="http://jigsaw.w3.org/css-validator/check/referer" title="CSS validation.">CSS</a>
+</span>
+</span>
+</div>
+</div>
+</body>
+</html>

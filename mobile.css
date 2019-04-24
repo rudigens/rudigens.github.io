@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#contents {
+    height: 100%;
+    margin-bottom: 1px;
+}
+#contents, #footer {
+    height: auto;
+    width: auto;
+    min-width: 0px;
+}
+#container {
+    height: auto;
+    width: 375px;
+    background-image: none;
+    padding: 0;
+}
+#main_navigation, .sub_navigation {
+    display: none;
+}
+#mobile_navigation {
+    display: block;
+    padding: 2px;
+    margin-top: 5px;
+    text-align: center;
+}
+#mobile_title {
+    float: left;
+    color: #999;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5px;
+}
+h1 {
+    font-size: 1.1em;
+}
+h2 {
+    font-size: 1em;
+}
+img.align_left, img.align_right {
+    float: center;
+    margin: 5px 30px;
+}
+.activity, .activity_only, .location, .location_top, .details, .publications {
+    padding-left: 0;
+}
