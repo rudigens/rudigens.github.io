@@ -27,7 +27,7 @@ body {
     text-align: center;
 }
 #mobile_title {
-    float: left;
+    display: block;
     color: #999;
     font-weight: bold;
     font-size: 1em;
